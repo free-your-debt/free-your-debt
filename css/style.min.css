@@ -1,0 +1,125 @@
+@media screen and (max-width: 1250px) {
+    .feedbacks-container {
+        display: none;
+    }
+    .feedbacks-container-mobile {
+        display: block;
+    }
+    .feedback {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .trust-cards {
+        margin: 32px auto 0;
+        row-gap: 24px;
+        justify-content: center;
+    }
+    .trust-cards:last-of-type {
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .logo {
+        margin: 18px 16px;
+    }
+    .header-button {
+        font-size: 14px;
+        width: 130px;
+        height: 32px;
+        margin: 16px;
+    }
+
+    .quiz-container {
+        margin: 64px auto 0;
+    }
+    .quiz-container h1 {
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .header-caption {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    .quiz-container img {
+        margin-top: 20px;
+    }
+    .quiz {
+        margin: 28px auto 0;
+    }
+    .quiz-question {
+        font-size: 16px;
+    }
+    .answer-button {
+        height: 41px;
+        font-size: 14px;
+    }
+    .participate-button {
+        max-width: 224px;
+        height: 44px;
+        font-size: 14px;
+        margin: 32px auto 0;
+    }
+
+    .section {
+        margin-top: 80px;
+    }
+    section h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    section p {
+        font-size: 16px;
+        line-height: 19px;
+        margin: 12px auto 0;
+    }
+
+    .last-paragraph {
+        max-width: fit-content;
+        font-size: 16px;
+        margin-top: 26px;
+        text-align: left;
+        width: 90%;
+    }
+
+    .feedback {
+        max-height: 306px;
+    }
+    .feedback-name .name {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .feedback-name .stars {
+        font-size: 16px;
+    }
+    .feedback-content {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .trust-cards {
+        margin: 32px auto 0;
+    }
+    .trust-card {
+        max-width: 415px;
+        min-height: 90px;
+        width: 100%;
+    }
+    .trust-card-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .trust-card-content {
+        font-size: 14px;
+    }
+
+    footer {
+        padding-top: 80px;
+    }
+    .footer-inner {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+}

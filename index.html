@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Freedom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="https://usfinancerelief.org/wp-content/uploads/2024/04/cropped-icon-32x32.png">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="scripts/quiz.js"></script>
+    <script src="scripts/geo-tracker-inframe.js"></script>
+    <script src="scripts/swiper.js" type="module"></script>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="images/logo.png" alt="">
+        <a class="header-button" href="tel:+1(888) 217-3304" >+1 (888) 217-3304</a>
+    </nav>
+    <main>
+        <section class="quiz-container">
+            <h1>
+                Find out how to reduce your debt by up <span class="selected">to 70%!</span>
+            </h1>
+            <p class="header-caption">
+                Answer 2 questions and we will find the best solution for you
+            </p>
+            <img src="images/senior-couple.jpg" alt="">
+            <div id="quiz" class="quiz">
+                <p id="quiz-question" class="quiz-question">What is the amount of your debt?</p>
+                <div id="answers">
+                    <button class="answer-button" id="btn1" onclick="nextQuestion()">$10k – $20k</button>
+                    <button class="answer-button" id="btn2" onclick="nextQuestion()">$20k – $50k</button>
+                    <button class="answer-button" id="btn3" onclick="nextQuestion()">$50k – $80k</button>
+                </div>
+            </div>
+            <div id="result" style="display: none;">You are not approved</div>
+        </section>
+        <section>
+            <h2>
+                We have selected an <span class="selected">individual solution</span> for you to you to reduce your debt
+            </h2>
+            <p>
+                Start a new <span class="accent">life without debt</span>! Take the first step towards financial freedom today! 
+            </p>
+            <a href="/" class="participate-button">Participate in the program</a>
+        </section>
+        <section>
+            <h2>
+                <span class="selected">Thousands of retirees</span> have trusted us with their finances and transformed their lives
+            </h2>
+            <div class="feedbacks-container">
+                <div class="feedback">
+                    <div class="feedback-container">
+                        <div class="feedback-author">
+                            <img src="images/feedback-1.png" alt="">
+                            <div class="feedback-name">
+                                <p class="name">Barbara, 67, Texas</p>
+                                <p class="stars">⭐️ ⭐ ️⭐️ ⭐ ️⭐️</p>
+                            </div>
+                        </div>
+                        <p class="feedback-content">
+                            I was $30,000 in debt due to medical expenses, and every month was getting harder. My payments were taking up my entire retirement and I was even thinking of selling my house. But after calling this program, my debts decreased by 65% and now I can live in peace again. Now I can afford the medicines I need and even gifts for my grandchildren. It was the best help I have ever received.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback-container">
+                        <div class="feedback-author">
+                            <img src="images/feedback-2.png" alt="">
+                            <div class="feedback-name">
+                                <p class="name">James, 73, California</p>
+                                <p class="stars">⭐️ ⭐ ️⭐️ ⭐ ️⭐️</p>
+                            </div>
+                        </div>
+                        <p class="feedback-content">
+                            I retired with over $45,000 in debt and didn't know how to pay it off. The monthly payments were becoming overwhelming and I was afraid I would lose my financial stability. In one call, this program helped me reduce my debt to $18,000. Now I can stop worrying about money and enjoy time with my family. They literally saved my future.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback-container">
+                        <div class="feedback-author">
+                            <img src="images/feedback-3.png" alt="">
+                            <div class="feedback-name">
+                                <p class="name">Linda, 69, Florida</p>
+                                <p class="stars">⭐️ ⭐ ️⭐️ ⭐ ️⭐️</p>
+                            </div>
+                        </div>
+                        <p class="feedback-content">
+                            My debts after retirement became a big burden for me. Every month I was stressed about my bills and didn't even have enough money for food. The program helped me reduce my debt from $28,000 to $9,500. I can finally live without fear and spend money on things that bring me joy. I am very grateful for this help!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feedbacks-container-mobile">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback-container">
+                                    <div class="feedback-author">
+                                        <img src="images/feedback-1.png" alt="">
+                                        <div class="feedback-name">
+                                            <p class="name">Barbara, 67, Texas</p>
+                                            <p class="stars">⭐️ ⭐ ️⭐️ ⭐ ️⭐️</p>
+                                        </div>
+                                    </div>
+                                    <p class="feedback-content">
+                                        I was $30,000 in debt due to medical expenses, and every month was getting harder. My payments were taking up my entire retirement and I was even thinking of selling my house. But after calling this program, my debts decreased by 65% and now I can live in peace again. Now I can afford the medicines I need and even gifts for my grandchildren. It was the best help I have ever received.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback-container">
+                                    <div class="feedback-author">
+                                        <img src="images/feedback-2.png" alt="">
+                                        <div class="feedback-name">
+                                            <p class="name">James, 73, California</p>
+                                            <p class="stars">⭐️ ⭐ ️⭐️ ⭐ ️⭐️</p>
+                                        </div>
+                                    </div>
+                                    <p class="feedback-content">
+                                        I retired with over $45,000 in debt and didn't know how to pay it off. The monthly payments were becoming overwhelming and I was afraid I would lose my financial stability. In one call, this program helped me reduce my debt to $18,000. Now I can stop worrying about money and enjoy time with my family. They literally saved my future.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback-container">
+                                    <div class="feedback-author">
+                                        <img src="images/feedback-3.png" alt="">
+                                        <div class="feedback-name">
+                                            <p class="name">Linda, 69, Florida</p>
+                                            <p class="stars">⭐️ ⭐ ️⭐️ ⭐ ️⭐️</p>
+                                        </div>
+                                    </div>
+                                    <p class="feedback-content">
+                                        My debts after retirement became a big burden for me. Every month I was stressed about my bills and didn't even have enough money for food. The program helped me reduce my debt from $28,000 to $9,500. I can finally live without fear and spend money on things that bring me joy. I am very grateful for this help!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Why you should trust us:</h2>
+            <div class="trust-cards">
+                <div class="trust-card">
+                    <p class="trust-card-title">
+                        More than 25,000 satisfied customers 🫂
+                    </p>
+                    <p class="trust-card-content">
+                        We have already helped thousands of<br> retirees regain financial stability.
+                    </p>
+                </div>
+                <div class="trust-card">
+                    <p class="trust-card-title">
+                        Customized solutions 💡
+                    </p>
+                    <p class="trust-card-content">
+                        We analyze your situation and find the best solution for you.
+                    </p>
+                </div>
+            </div>
+            <div class="trust-cards">
+                <div class="trust-card">
+                    <p class="trust-card-title">
+                        Preserving your credit rating 🛡️
+                    </p>
+                    <p class="trust-card-content">
+                        We work to ensure that your credit rating remains intact.
+                    </p>
+                </div>
+                <div class="trust-card">
+                    <p class="trust-card-title">
+                        Fast results 🚀
+                    </p>
+                    <p class="trust-card-content">
+                        Most clients get a significant reduction in debt after just one call.
+                    </p>
+                </div>
+            </div>
+            <p class="last-paragraph">
+                Start your journey to <span class="accent">a debt-free life</span>  today! Take the first step now!
+            </p>
+            <a href="/" class="participate-button">Participate in the program</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="links">
+                <a href="privacy-policy/index.html" rel="noopener">Privacy Policy</a>
+                <a href="" rel="noopener">Terms of service</a>
+            </div>
+            <p style="text-align: center;">
+                Get in touch with us:<br> freefromdebt@gmail.com
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
